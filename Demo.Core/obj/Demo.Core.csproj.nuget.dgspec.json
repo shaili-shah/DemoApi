@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\Demo.Core\\Demo.Core.csproj": {}
+    "C:\\DemoWebApi\\Demo.Core\\Demo.Core.csproj": {}
   },
   "projects": {
-    "C:\\Project\\Demo.Core\\Demo.Core.csproj": {
+    "C:\\DemoWebApi\\Demo.Core\\Demo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\Demo.Core\\Demo.Core.csproj",
+        "projectUniqueName": "C:\\DemoWebApi\\Demo.Core\\Demo.Core.csproj",
         "projectName": "Demo.Core",
-        "projectPath": "C:\\Project\\Demo.Core\\Demo.Core.csproj",
+        "projectPath": "C:\\DemoWebApi\\Demo.Core\\Demo.Core.csproj",
         "packagesPath": "C:\\Users\\Albiorix Technology\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\Demo.Core\\obj\\",
+        "outputPath": "C:\\DemoWebApi\\Demo.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -335,11 +335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\Demo.Services\\Demo.Services.csproj",
+      "projectUniqueName": "C:\\DemoWebApi\\Demo.Services\\Demo.Services.csproj",
       "projectName": "Demo.Services",
-      "projectPath": "C:\\Project\\Demo.Services\\Demo.Services.csproj",
+      "projectPath": "C:\\DemoWebApi\\Demo.Services\\Demo.Services.csproj",
       "packagesPath": "C:\\Users\\Albiorix Technology\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\Demo.Services\\obj\\",
+      "outputPath": "C:\\DemoWebApi\\Demo.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -361,8 +361,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Project\\Demo.Core\\Demo.Core.csproj": {
-              "projectPath": "C:\\Project\\Demo.Core\\Demo.Core.csproj"
+            "C:\\DemoWebApi\\Demo.Core\\Demo.Core.csproj": {
+              "projectPath": "C:\\DemoWebApi\\Demo.Core\\Demo.Core.csproj"
             }
           }
         }

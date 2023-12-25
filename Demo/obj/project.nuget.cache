@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TxzC/bS6glsGqyHzv0aBXgIxLZa37HkjpU7CxZHMzqIFneFSrjbvGL6fCC8dC485KJN6ucaPibnxu/C3KapBig==",
+  "dgSpecHash": "vKBjYdB8/3Trmyl54BQfA05Wb61DAdRsRq6ihAVQ6W2MY420AePxXoPxJ4FLJPxvUk+h4geY7zQDfwHLZQXAIw==",
   "success": true,
-  "projectFilePath": "C:\\Project\\Demo\\Demo.csproj",
+  "projectFilePath": "C:\\DemoWebApi\\Demo\\Demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Albiorix Technology\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Albiorix Technology\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
