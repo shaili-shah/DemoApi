@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "MrDge9R4MjLXhqZFkOfaOq3xUj5lr6Ljf/LSzmW6XCDS0yaAikaJ+R9Zd048KYlmauEJcN6pBJZW6RVAnas2qQ==",
+  "success": true,
+  "projectFilePath": "C:\\Project\\Demo.Services\\Demo.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Albiorix Technology\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Albiorix Technology\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Albiorix Technology\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Albiorix Technology\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Albiorix Technology\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Albiorix Technology\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Albiorix Technology\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

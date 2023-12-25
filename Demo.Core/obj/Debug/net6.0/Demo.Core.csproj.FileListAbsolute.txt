@@ -1,0 +1,11 @@
+C:\Project\Demo.Core\bin\Debug\net6.0\Demo.Core.deps.json
+C:\Project\Demo.Core\bin\Debug\net6.0\Demo.Core.dll
+C:\Project\Demo.Core\bin\Debug\net6.0\Demo.Core.pdb
+C:\Project\Demo.Core\obj\Debug\net6.0\Demo.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\Demo.Core\obj\Debug\net6.0\Demo.Core.AssemblyInfoInputs.cache
+C:\Project\Demo.Core\obj\Debug\net6.0\Demo.Core.AssemblyInfo.cs
+C:\Project\Demo.Core\obj\Debug\net6.0\Demo.Core.csproj.CoreCompileInputs.cache
+C:\Project\Demo.Core\obj\Debug\net6.0\Demo.Core.dll
+C:\Project\Demo.Core\obj\Debug\net6.0\refint\Demo.Core.dll
+C:\Project\Demo.Core\obj\Debug\net6.0\Demo.Core.pdb
+C:\Project\Demo.Core\obj\Debug\net6.0\ref\Demo.Core.dll
