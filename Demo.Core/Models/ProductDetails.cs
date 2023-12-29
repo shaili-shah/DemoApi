@@ -1,6 +1,4 @@
-﻿
-
-namespace Demo.Core.Models
+﻿namespace Demo.Core.Models
 {
     public class ProductDTO
     {

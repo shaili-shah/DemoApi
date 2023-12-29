@@ -1,13 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Demo.Core.Models;
+﻿using AutoMapper;
 using Demo.Services.Interfaces;
-using AutoMapper;
 using Demo.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.Controllers
 {
-    [Authorize(Roles = CustomRoles.User + "," + CustomRoles.Admin)]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : BaseController

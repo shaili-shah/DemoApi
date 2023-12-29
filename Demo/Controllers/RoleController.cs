@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace Demo.Controllers
+﻿namespace Demo.Controllers
 {
     public class RoleController : BaseController
     {

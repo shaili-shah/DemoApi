@@ -1,14 +1,10 @@
-﻿using Demo.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Demo.Core.ViewModels
+﻿namespace Demo.Core.ViewModels
 {
     public class UserToRoleViewModel
     {
+        public UserToRoleViewModel() {
+            Role = new RoleViewModel();
+        }
         public int Id { get; set; }
         public int UserId { get; set; }
         public int RoleId { get; set; }

@@ -1,11 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Demo.Core.Models;
+﻿using Demo.Core.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Demo.Infrastructure
 {
