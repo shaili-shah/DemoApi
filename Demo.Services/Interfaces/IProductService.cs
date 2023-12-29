@@ -10,7 +10,7 @@ namespace Demo.Services.Interfaces
 {
     public interface IProductService
     {
-        Task<bool> CreateProduct(ProductDTO productDetails);
+        Task<bool> CreateProduct(ProductViewModel productDetails);
 
         Task<IEnumerable<ProductDTO>> GetAllProducts();
 

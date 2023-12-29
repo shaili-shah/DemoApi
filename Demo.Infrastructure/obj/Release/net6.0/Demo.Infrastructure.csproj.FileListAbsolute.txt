@@ -1,0 +1,17 @@
+C:\DemoWebApi\Demo.Infrastructure\bin\Release\net6.0\Demo.Infrastructure.deps.json
+C:\DemoWebApi\Demo.Infrastructure\bin\Release\net6.0\Demo.Infrastructure.runtimeconfig.json
+C:\DemoWebApi\Demo.Infrastructure\bin\Release\net6.0\Demo.Infrastructure.dll
+C:\DemoWebApi\Demo.Infrastructure\bin\Release\net6.0\Demo.Infrastructure.pdb
+C:\DemoWebApi\Demo.Infrastructure\bin\Release\net6.0\Demo.Core.dll
+C:\DemoWebApi\Demo.Infrastructure\bin\Release\net6.0\Demo.Core.pdb
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.csproj.AssemblyReference.cache
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.AssemblyInfoInputs.cache
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.AssemblyInfo.cs
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.csproj.CoreCompileInputs.cache
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.csproj.CopyComplete
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.dll
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\refint\Demo.Infrastructure.dll
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.pdb
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\Demo.Infrastructure.genruntimeconfig.cache
+C:\DemoWebApi\Demo.Infrastructure\obj\Release\net6.0\ref\Demo.Infrastructure.dll

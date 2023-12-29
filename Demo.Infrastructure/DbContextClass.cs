@@ -27,6 +27,7 @@ namespace Demo.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Seed();
             // Configure many-to-many relationship
             modelBuilder.Entity<ApplicationUserToRoleDTO>()
                 .HasKey(ur => new { ur.Id });

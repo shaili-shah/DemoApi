@@ -3,14 +3,16 @@ using Demo.Core.Models;
 using Demo.Services.Interfaces;
 using AutoMapper;
 using Demo.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Demo.Controllers
 {
+    [Authorize(Roles = CustomRoles.User + "," + CustomRoles.Admin)]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : BaseController
     {
-        public readonly IProductService _productService;
+        private readonly IProductService _productService;
         private readonly IMapper _mapper;
         public ProductsController(IProductService productService,IMapper mapper)
         {
@@ -48,9 +50,8 @@ namespace Demo.Controllers
         /// <param name="productDetails"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> CreateProduct(ProductViewModel productDetails)
+        public async Task<IActionResult> CreateProduct(ProductViewModel model)
         {
-            var model = _mapper.Map<ProductDTO>(productDetails);
             var isProductCreated = await _productService.CreateProduct(model);
             return isProductCreated ? HandleResponse(isProductCreated) : BadRequest();
         }

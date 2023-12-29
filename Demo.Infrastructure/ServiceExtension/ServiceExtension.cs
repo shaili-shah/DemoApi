@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Demo.Core.Interfaces;
 using Demo.Infrastructure.Repositories;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Demo.Infrastructure.ServiceExtension
 {
@@ -20,6 +21,7 @@ namespace Demo.Infrastructure.ServiceExtension
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }

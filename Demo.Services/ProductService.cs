@@ -18,10 +18,11 @@ namespace Demo.Services
             _mapper = mapper;
         }
 
-        public async Task<bool> CreateProduct(ProductDTO productDetails)
+        public async Task<bool> CreateProduct(ProductViewModel model)
         {
-            if (productDetails != null)
+            if (model != null)
             {
+                var productDetails = _mapper.Map<ProductDTO>(model);
                 await _productRepository.Add(productDetails);
 
                 var result = _productRepository.Save();

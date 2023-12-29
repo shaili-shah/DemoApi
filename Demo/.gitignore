@@ -1,0 +1,7 @@
+﻿*.dll
+*.pdb
+*.log
+bin/
+obj/
+.vs
+temp

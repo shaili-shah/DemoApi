@@ -83,6 +83,7 @@ C:\DemoWebApi\Demo\bin\Debug\net6.0\Demo.pdb
 C:\DemoWebApi\Demo\bin\Debug\net6.0\AutoMapper.dll
 C:\DemoWebApi\Demo\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\DemoWebApi\Demo\bin\Debug\net6.0\Humanizer.dll
+C:\DemoWebApi\Demo\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\DemoWebApi\Demo\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\DemoWebApi\Demo\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\DemoWebApi\Demo\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll

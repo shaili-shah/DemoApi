@@ -16,7 +16,6 @@ namespace Demo.Core.Models
         public string? Lastname { get; set; }
         public string? Password { get; set; }
 
-        public int RoleId { get; set; }
         public List<ApplicationUserToRoleDTO> ApplicationUserToRoles { get; set; } = new List<ApplicationUserToRoleDTO>();
 
 
