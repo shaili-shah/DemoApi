@@ -1,0 +1,35 @@
+name: Deploy to IIS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Download Published Artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: publish
+        path: .
+
+    - name: Setup IIS Web App
+      uses: actions/setup-iis-webapp@v2
+      with:
+        webSiteName: 'publish'
+        package: '.'
+
+    - name: Start IIS Web App
+      run: Start-WebAppPool -Name 'DemoWebApi'
+
+    - name: Deploy to IIS
+      run: Copy-Item -Path "*" -Destination "$env:SystemDrive\inetpub\wwwroot\publish" -Recurse
+
+    - name: Restart IIS Web App
+      run: Restart-WebAppPool -Name 'DemoWebApi'
