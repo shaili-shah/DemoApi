@@ -1,0 +1,40 @@
+name: Deploy to IIS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Download Published Artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: publish
+        path: .
+
+    - name: Deploy to IIS
+      run: |
+        $webSiteName = 'publish'
+        $appPoolName = 'DemoWebApi'
+        $webRootPath = "C:\inetpub\wwwroot\$webSiteName"
+
+        # Stop the IIS App Pool
+        Stop-WebAppPool -Name $appPoolName
+
+        # Remove existing files
+        Remove-Item -Path $webRootPath\* -Recurse -Force
+
+        # Copy the new files
+        Copy-Item -Path .\* -Destination $webRootPath -Recurse
+
+        # Start the IIS App Pool
+        Start-WebAppPool -Name $appPoolName
+
+        Write-Host "Deployment completed."
