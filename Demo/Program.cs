@@ -1,5 +1,6 @@
 using Demo;
 using Demo.Infrastructure.ServiceExtension;
+using Demo.Jobs;
 using Demo.Services;
 using Demo.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -13,6 +14,8 @@ builder.Services.AddDIServices(builder.Configuration);
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddSingleton<IJWTService, JWTService>();
+
+builder.Services.RegisterJobs(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

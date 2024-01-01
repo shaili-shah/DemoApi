@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Demo.Services.Interfaces;
 using Demo.ViewModels;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.Controllers
