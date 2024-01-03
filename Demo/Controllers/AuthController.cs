@@ -17,6 +17,11 @@ namespace Demo.Controllers
             _jwtService = jwtService;
         }
 
+        /// <summary>
+        /// Get token
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {

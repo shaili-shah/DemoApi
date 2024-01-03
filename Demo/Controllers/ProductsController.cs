@@ -5,13 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.Controllers
 {
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     public class ProductsController : BaseController
     {
         private readonly IProductService _productService;
         private readonly IMapper _mapper;
-        public ProductsController(IProductService productService,IMapper mapper)
+        public ProductsController(IProductService productService, IMapper mapper)
         {
             _productService = productService;
             _mapper = mapper;
@@ -27,7 +28,7 @@ namespace Demo.Controllers
             var productDetailsList = await _productService.GetAllProducts();
             return HandleResponse(productDetailsList);
         }
-
+     
         /// <summary>
         /// Get product by id
         /// </summary>
@@ -37,7 +38,6 @@ namespace Demo.Controllers
         public async Task<IActionResult> GetProductById(int productId)
         {
             var productDetails = await _productService.GetProductById(productId);
-
             return productDetails != null ? HandleResponse(productDetails) : NotFound();
         }
 

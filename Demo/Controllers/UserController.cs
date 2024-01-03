@@ -28,6 +28,7 @@ namespace Demo.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(UserViewModel model)
         {
+            if (!ModelState.IsValid) { return BadRequest(); }
             var isUserCreated = await _userService.CreateUser(model);
             return isUserCreated ? HandleResponse(isUserCreated) : BadRequest();
         }
