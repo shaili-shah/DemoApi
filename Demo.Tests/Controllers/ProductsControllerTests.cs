@@ -20,10 +20,8 @@ namespace Demo.Tests.Controllers
                 new ProductDTO(){Id = 1,ProductName = "p1",ProductDescription = "desc"},
                 new ProductDTO(){Id = 2,ProductName = "p2",ProductDescription = "desc"}
             };
-            var productServiceMock = new Mock<IProductService>(MockBehavior.Strict);
+            var (controller, productServiceMock, _) = MockProductController();
             productServiceMock.Setup(x => x.GetAllProducts()).ReturnsAsync(expectedProductList);
-            var mapper = new Mock<IMapper>();
-            var controller = new ProductsController(productServiceMock.Object, mapper.Object);
 
             // Act
             var result = await controller.GetProductList();
@@ -51,11 +49,8 @@ namespace Demo.Tests.Controllers
                 ProductPrice = 999
             };
 
-            var productServiceMock = new Mock<IProductService>(MockBehavior.Strict);
-            var mapper = new Mock<IMapper>(MockBehavior.Strict);
+            var (controller, productServiceMock, _) = MockProductController();
             productServiceMock.Setup(service => service.GetProductById(productId)).ReturnsAsync(expectedProductList);
-
-            var controller = new ProductsController(productServiceMock.Object, mapper.Object);
 
             // Act
             var result = await controller.GetProductById(productId);
@@ -84,11 +79,8 @@ namespace Demo.Tests.Controllers
                 ProductPrice = 999
             };
 
-            var productServiceMock = new Mock<IProductService>(MockBehavior.Strict);
-            var mapper = new Mock<IMapper>(MockBehavior.Strict);
+            var (controller, productServiceMock, _) = MockProductController();
             productServiceMock.Setup(service => service.CreateProduct(model)).ReturnsAsync(true);
-
-            var controller = new ProductsController(productServiceMock.Object, mapper.Object);
 
             // Act
             var result = await controller.CreateProduct(model);
@@ -117,11 +109,8 @@ namespace Demo.Tests.Controllers
                 ProductPrice = 999
             };
 
-            var productServiceMock = new Mock<IProductService>();
-            var mapper = new Mock<IMapper>(MockBehavior.Strict);
+            var (controller, productServiceMock, _) = MockProductController();
             productServiceMock.Setup(service => service.UpdateProduct(model)).ReturnsAsync(true);
-
-            var controller = new ProductsController(productServiceMock.Object, mapper.Object);
 
             // Act
             var result = await controller.UpdateProduct(model);
@@ -144,12 +133,9 @@ namespace Demo.Tests.Controllers
             // Arrange
             var productId = 1;
 
-            var productServiceMock = new Mock<IProductService>();
+            var (controller, productServiceMock, _) = MockProductController();
             productServiceMock.Setup(service => service.DeleteProduct(productId)).ReturnsAsync(true);
-            var mapper = new Mock<IMapper>(MockBehavior.Strict);
-
-            var controller = new ProductsController(productServiceMock.Object , mapper.Object);
-
+           
             // Act
             var result = await controller.DeleteProduct(productId);
 
@@ -164,5 +150,14 @@ namespace Demo.Tests.Controllers
 
             productServiceMock.Verify(service => service.DeleteProduct(productId), Times.Once);
         }
+
+        private  static (ProductsController,Mock<IProductService>,Mock<IMapper>) MockProductController()
+        {
+            var mapper = new Mock<IMapper>(MockBehavior.Strict);
+            var productServiceMock = new Mock<IProductService>(MockBehavior.Strict);
+            var controller = new ProductsController(productServiceMock.Object,mapper.Object);
+            return (controller,productServiceMock,mapper);
+        }
+
     }
 }
