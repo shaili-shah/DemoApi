@@ -33,6 +33,23 @@ namespace Demo.Controllers
             return isUserCreated ? HandleResponse(isUserCreated) : BadRequest();
         }
 
+        [Route("AssignRole")]
+        [HttpPost]
+        public async Task<IActionResult> AssignRole(int userId, List<int> roleId)
+        {
+            var isRoleAssigned = await _userService.AssignRole(userId, roleId);
+            return isRoleAssigned ? HandleResponse(isRoleAssigned) : BadRequest();
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int userId)
+        {
+            if(userId <= 0) { return BadRequest(); }
+            {
+                var isUserDeleted = await _userService.DeleteUser(userId);
+                return isUserDeleted ? HandleResponse(isUserDeleted) : BadRequest();
+            }
+        }
 
     }
 }
